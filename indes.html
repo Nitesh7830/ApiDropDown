@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Dropdown and Table</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Dropdown and Table Using Free APIs</h1>
+  <div>
+    <label for="countryDropdown">Select a Country:</label>
+    <select id="countryDropdown">
+      <option value="">-- Select a Country --</option>
+    </select>
+  </div>
+  <div>
+    <h2>Country Details</h2>
+    <div class="loader" id="loader"></div>
+
+    <table id="countryDetailsTable">
+      <thead>
+        <tr>
+          <th>Field</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Table rows will be dynamically added here -->
+      </tbody>
+    </table>
+  </div>
+  <script type="module" src="js/apiDropdown.js"></script>
+</body>
+</html>
